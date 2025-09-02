@@ -76,3 +76,25 @@ header {
 .container{
   margin: 100px;
 }
+
+.image2{
+  height: 250px;
+}
+
+.productInner{
+  position: relative;
+}
+
+.onsale{
+  position:absolute;
+  background-color: brown;
+  margin-top: -08px;
+  margin-left: 14px;
+  border-radius: 6px;
+}
+
+.description{
+      font-size: 40px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      margin-top: 35px;
+}
