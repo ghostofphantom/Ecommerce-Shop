@@ -2,6 +2,8 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  '../App.css'; 
 import logo from '../assets/logo.png';
+import { Link, Links, NavLink } from 'react-router';
+import Cart from '../pages/Cart.jsx'
 
   
   function Header() {
@@ -14,7 +16,7 @@ import logo from '../assets/logo.png';
 
       <div className="header-main">
         <div className="logo">
-          <img src={logo} alt="Kinari" />
+        <Link to="/home">  <img src={logo} alt="Kinari" /> </Link>
         </div>
         <nav>
           <ul className="nav-links">
@@ -29,7 +31,7 @@ import logo from '../assets/logo.png';
           <ul className="user-actions">
             <li><a href="#">ACCOUNT</a></li>
             <li><a href="#">SEARCH</a></li>
-            <li><a href="#">CART (0) </a></li>
+            <li><Link to="/cart" > CART (0) </Link>  </li>
           </ul>
         </div>
       </div>

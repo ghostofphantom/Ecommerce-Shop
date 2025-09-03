@@ -4,8 +4,8 @@ import Cards from '../Components/cards'
 
 function Home() {
   return (
-    <Cards />    
-  )
+      <Cards />
+    )
 }
 
 export default Home
