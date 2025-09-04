@@ -16,7 +16,7 @@ import Cart from '../pages/Cart.jsx'
 
       <div className="header-main">
         <div className="logo">
-        <Link to="/home">  <img src={logo} alt="Kinari" /> </Link>
+        <Link to="/">  <img src={logo} alt="Kinari" /> </Link>
         </div>
         <nav>
           <ul className="nav-links">

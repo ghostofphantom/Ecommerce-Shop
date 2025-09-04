@@ -1,5 +1,5 @@
 import React from 'react'
-import img from '../assets/Cart.png'
+import img from '../assets/cart.png'
 
 
 function Cart() {
@@ -13,7 +13,7 @@ function Cart() {
       </div>
       <div className="col-md-6">
         <div className="description">
-          <p>Tropical Noir Linen 2pc</p>
+          <p>Midnight Petals Linen 2pc</p>
           <p>Rs.3,495.00</p>
         </div>
       </div>
