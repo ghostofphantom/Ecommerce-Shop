@@ -11,7 +11,7 @@ function Cards() {
         <div className="row">
             {products.map( (item) => (
                 <div key={item.id} className="col-md-3">
-                <div className="producInner">
+                <div className="productInner">
                     <span className="onsale">OnSale</span>
                 <img className='image1' src={item.img} alt="Product 1" />
                 <p> {item.product_title} </p>

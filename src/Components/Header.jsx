@@ -11,7 +11,7 @@ import Cart from '../pages/Cart.jsx'
     <header>
       
       <div className="top-notification">
-        <p>7-DAYS HASSLE FREE RETURN AND EXCHANGE POLICY!</p>
+        <p className='exchangepolicy'>7-DAYS HASSLE FREE RETURN AND EXCHANGE POLICY!</p>
       </div>
 
       <div className="header-main">
