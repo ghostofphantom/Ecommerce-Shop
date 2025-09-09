@@ -2,12 +2,11 @@ import React from 'react'
 import img from '../assets/Cart.png'
 
 
-
 function Cart() {
   return (
    <div className="container">
     <div className="row">
-      <div className="col-md-8">
+      <div className="col-md-7">
         <div className="checkout">
           <img className='cart.img' src={img} alt="" />
         </div>
@@ -18,6 +17,7 @@ function Cart() {
           <p>Rs.3,495.00</p>
           <button className='Checkout'> ADD TO CART </button>
           <button className='Buynow'> BUY IT NOW </button>
+          <p className='lowerContent'>Wear the Art You Feel Premium Linen, Unstitched for You.🎨</p>
         </div>
       </div>
     </div>
