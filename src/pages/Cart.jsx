@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import img from '../assets/Cart.png'
+import { cartContext } from '../context/createContext'
+
+
 
 
 function Cart() {
+  const useCartCont = useContext(cartContext)
   return (
    <div className="container">
     <div className="row">
       <div className="col-md-7">
         <div className="checkout">
           <img className='cart.img' src={img} alt="" />
+          {useCartCont}
         </div>
       </div>
       <div className="col-md-4">

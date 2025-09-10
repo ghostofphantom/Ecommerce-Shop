@@ -7,18 +7,18 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 function Cards() {
 
-       useEffect(() => {
-            AOS.init({
-                offset: 400,
-            });
-       },[])
+    //    useEffect(() => {
+    //         AOS.init({
+    //             offset: 420,
+    //         });
+    //    },[])
 
   return (
     
     <div className="container">
         <div className="row">
             {products.map( (item) => (
-                <div data-aos="fade-down" key={item.id} className="col-md-3">
+                <div key={item.id} className="col-md-3">
                 <div className="productInner">
                     <span className="onsale">OnSale</span>
                 <img className='image1' src={item.img} alt="Product 1" />
