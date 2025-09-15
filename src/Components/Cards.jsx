@@ -23,7 +23,8 @@ function Cards() {
                     <span className="onsale">OnSale</span>
                 <img className='image1' src={item.img} alt="Product 1" />
                 <p> {item.product_title} </p>
-                <button>Rs {item.price} </button>
+                <button type='add_to_cart'>Rs {item.price} </button>
+                <button type='add_to_cart'>Rs {item.price} </button>
                 </div>
             </div>
             ) )}
