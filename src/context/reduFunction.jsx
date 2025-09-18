@@ -2,13 +2,17 @@ import React from 'react'
 
 function reduFunction(state , action) {
 
-    switch(action.type) {
+  switch(action.type){
 
-    }
-    
-  return (
-    null
-  )
+        case "add":
+            return [...state , action.product]
+
+
+
+        default:
+        return state
+
+  }
 }
 
 export default reduFunction

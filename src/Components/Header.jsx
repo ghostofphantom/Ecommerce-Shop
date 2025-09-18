@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import  '../App.css'; 
 import logo from '../assets/logo.png';
-import { Link, Links, NavLink } from 'react-router';
 import Cart from '../pages/Cart.jsx'
+import { cartContext } from '../context/createContext.jsx';
+import { Link } from 'react-router';
 
   
   function Header() {
+
+    const {cart} = useContext(cartContext)
+
     return (
     <header>
       
@@ -31,7 +35,7 @@ import Cart from '../pages/Cart.jsx'
           <ul className="user-actions">
             <li><a href="#">ACCOUNT</a></li>
             <li><a href="#">SEARCH</a></li>
-            <li><Link to="/cart" > CART (0) </Link>  </li>
+            <li><Link to="/cart" > CART ( {cart.length} ) </Link>  </li>
           </ul>
         </div>
       </div>
