@@ -17,7 +17,8 @@ export const products = [
         id : 2,
         product_title : "Teal Mirage Linen 2pc",
         price : "3,495.00",
-        img : image2
+        img : image2,
+        desc : "Wear the Art You Feel Premium Linen, Unstitched for You.🎨"
     },
     {
         id : 3,
