@@ -1,20 +1,34 @@
-import React from 'react'
-import Header from './Components/Header' 
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Home from './pages/Home'
-import Cart from './pages/Cart'
+import React from 'react';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import Header from './Components/Header';
+import Home from './pages/Home';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
+
+function AppRoutes() {
+  const location = useLocation();
+
+  const hideHeaderOnPaths = ['/checkout'];
+  const shouldShowHeader = !hideHeaderOnPaths.includes(location.pathname);
+
+  return (
+    <>
+      {shouldShowHeader && <Header />}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/checkout' element={<Checkout />} />
+      </Routes>
+    </>
+  );
+}
 
 function App() {
   return (
     <BrowserRouter>
-    <Header />
-    <Routes>
-      <Route path='/' element ={<Home/>}/>
-      {/* <Route path='/Cart/:id' element={<Cart/>}/> */}
-      <Route path='/cart' element={<Cart/>}/>
-    </Routes>
+      <AppRoutes />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

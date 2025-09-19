@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 // import { useParams } from 'react-router';
 import { cartContext } from '../context/createContext';
+import Checkout from './Checkout';
+import { Link } from 'react-router-dom';
 
 function Cart() {
   // const { img, product_title } = useParams(); 
@@ -23,7 +25,7 @@ const {cart} = useContext(cartContext)
           <div className="description">
             <p>{item.product_title}</p>
             <p>Rs. {item.price} </p>
-            <button className="Checkout">ADD TO CART</button>
+            <Link to="/checkout" > <button className="Checkout">PROCEED TO CHECKOUT</button> </Link>
             <button className="Buynow">BUY IT NOW</button>
             <p className="lowerContent">
               {item.desc}
