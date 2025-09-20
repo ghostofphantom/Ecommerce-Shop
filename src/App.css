@@ -204,3 +204,25 @@ span.Emptycart{
   padding: 14px;
 }
 
+.logo{   
+  align-items: center;
+  justify-content: center;
+  display: flex;  
+  } 
+
+ .logoimage{
+  height: 120px;
+  width: 140px;
+  object-fit: contain;
+  
+  
+} 
+
+.paynow{
+  margin-top: -80px;
+  margin-left: 40px;
+}
+
+.silversec{
+  
+}
